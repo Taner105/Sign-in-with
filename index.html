@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in with</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&amp;display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <h1>Sign In With</h1>
-    <div id="container">
-        <div id="facebook">
-            <a href="https://www.facebook.com">
-            <class> class="fa fa-facebook-square"></class>Facebook</a>
-
+    <div id="section">
+        <h1>Sign In With</h1>
+        <div id="container">
+            <div id="facebook">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i>Facebook</a>
+            </div>
+            <div id="google">
+                <div id="google_logo">
+                    <a href="htpps://google.com"><img src="preview.jpg" alt="googlelogo" width="50"></a>
+                </div>
+                <a href="https://www.google.com" id="google_text">Google</a>
+            </div>
         </div>
+        <div id="account">
+            <form action="result.html">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username" class="account_input"><br>
+
+                <label for="Password">Password <span>Forgot?</span></label><br>
+                <input type="Password" name="Password" id="Password" class="account_input"><br>
+                <input type="submit" value="Sign in" class="account_submit">
+            </form>
+        </div>
+        <p>
+            Not a member yet?
+            <u>Sign up now</u>
+        </p>
     </div>
     
 </body>
